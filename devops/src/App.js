@@ -1,51 +1,40 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import NewExpense from "./Components/NewExpense/NewExpense";
 import Expenses from "./Components/Expenses/Expenses";
 
-  let DUMMY_EXPENSE = [
-    {
-     id : 'a1',
-     title : 'Institution Fee',
-     amount : 400,
-     date : new Date(2022, 5 ,30)
-    },
-    {
-        id : 'a2',
-        title : 'Books Bill ',
-        amount : 250,
-        date : new Date(2022, 6 ,5)
-       },
-       {
-        id : 'a3',
-        title : 'House Rent',
-        amount : 1000,
-        date : new Date(2022, 7 ,10)
-       },
-       {
-        id : 'a4',
-        title : 'Food Charges',
-        amount : 600,
-        date : new Date(2022, 5 , 14),
-       }
-     ]; 
+  let DUMMY_EXPENSE = []; 
 
 const App = () => {
    
-    const [expenses, setExpenses] = useState( DUMMY_EXPENSE);
+    const [expenses, setExpenses] = useState(DUMMY_EXPENSE);
+
+    useEffect(() =>{
+      
+     fetch('https://api.sampleapis.com/typer/welcomeQuestions').then(
+      response => {
+       return response.json();
+      }
+    ).then(
+      data => {
+    //  console.log(data);
+     setExpenses(data);
+      }
+   );
+
+   },[]);
 
        const addExpenseHandler = (expense) => {
-              const updatedExpense = [expense, ...expenses];
+           const updatedExpense = [expense, ...expenses];
            setExpenses(updatedExpense);
        };
     
-           return (
+          return ( 
            <div>
-           
-                    <NewExpense onAddExpense = {addExpenseHandler} />
+                 <NewExpense onAddExpense ={addExpenseHandler} />
                     
-                  <Expenses item={expenses}/>
+                  <Expenses item={expenses} />
           </div>
- );
-}
+  );
+   }
 
 export default App;

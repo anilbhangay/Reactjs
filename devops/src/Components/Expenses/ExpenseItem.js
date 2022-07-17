@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import './ExpenseItem.css';
 
@@ -13,7 +13,7 @@ const ExpenseItem = (props) => {
      return (
 
         <div className="expense-item">
-        <ExpenseDate Date={props.Date} />
+        <ExpenseDate Date={new Date(props.Date)} />
         <div className="expense-item__description">
             <h2>{ props.Title }</h2>
              <div className="expense-item__price">${props.Amount}</div>

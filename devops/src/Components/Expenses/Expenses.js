@@ -12,7 +12,7 @@ const Expenses = (props) => {
              {
               props.item.map(
                 expense => (    
-        <ExpenseItem      
+           <ExpenseItem    
               Date={expense.date} 
               Title={expense.title}
               Amount={expense.amount}/>
