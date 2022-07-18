@@ -1,9 +1,9 @@
 function About(){
     return(
         
-<div className="alert alert-primary" role="alert">
-         <h1>About Page</h1>
-      </div>
+<div className="alert alert-danger" role="alert">
+             <h1>About Page</h1>
+</div>
     );
 }
 
