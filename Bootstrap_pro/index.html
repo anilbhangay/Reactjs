@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!--Bootstrap icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!--style-->
+        <link rel="stylesheet" href="css/style.css">
+
+    <title>Bootstrap</title>
+  </head>
+  <body>
+   <!--Navbar-->
+   <nav class="navbar navbar-expand-lg navbar-dark " style="background-color:#f03433 ;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images/loo.png" width="180px" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Trainer</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Cardio</a></li>
+              <li><a class="dropdown-item" href="#">Workout</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Personal Training</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--slider-->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/gym1.jpg" height="500px" class="d-block w-100" alt="logo">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First Caption</h5>
+          <p>Burn your Belly Fat on Cardio Exercise...</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/gym2.jpg" height="500px" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second Caption</h5>
+          <p>Grow your Body with Heavy Workout...</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/gym3.jpg" height="500px" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-dark">Third Caption</h5>
+          <p class="text-dark">Full Week Gym Workout Plan...</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <div class="container-fluid">
+    <!--tagline-->
+    <div class="row">
+      <div class="col-12">
+     <h3  class="display-6 text-center mt-5 mb-2" >TechnoGym Will Provide a Better Services as you Need in the Body Fitness<br> and They Promised for Reach your Goal...</h3>
+    </div>
+  </div>
+  <!--feature-->
+  <div class="row justify-content-evenly pt-3 pb-3">
+    <div class="col-md-3 text-center mt-5">
+      <h1><i class="bi bi-bicycle text-primary"></i></h1>
+      <h5>Workout_Tips</h5>
+      <p>Exercise Daily. Exercise daily for at least an hour
+        Eat the Right Foods and Portion Each Meal. No matter how bad your stomach is telling you to go for candy over healthy food, try to stay away from sweets
+        Keep Track of Calories and Food Intake Per Day
+        Be Sure to Get Sleep
+        Stay Motivated.</p>
+    </div>
+    <div class="col-md-3 text-center mt-5">
+     <h1><i class="bi bi-fire text-danger"></i></h1>
+     <h5>Burn_Calories</h5>
+     <p>As a general guideline, women typically burn about 2,000 calories per day and men burn about 2,500 calories per day. These numbers are often used to determine an approximate food intake for weight maintenance. But these numbers are highly variable.</p>
+    </div>
+    <div class="col-md-3 text-center mt-5">
+    <h1><i class="bi bi-person-fill text-warning"></i></h1>
+    <h5>Personal_Training</h5>
+    <p>For many people, it is. A trainer can help you to reach important goals, help you to return to fitness after an injury, or simply provide motivation and accountability when you need it the most.</p>
+    </div>
+  </div>
+    <!--line-->
+     <hr>
+     <!--Motivated-->
+     <div class="row pb-5">
+      <div class="col-md-5 pt-5">
+          <img src="images/gyms.jpg" class="image-fluid" alt="...">
+      </div>
+      <div class="col-md-5">
+        <img src="images/club.jpg" class="image-fluid"  alt="...">
+      </div>
+     </div>
+
+     <!--Contact-->
+     <div class="row justify-content-evenly pt-3 pb-5" style="background-color:#f1f1f1;">
+     <div class="col-md-5 mt-5">
+      <h3 class="mb-4">Contact Form</h3>
+
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      
+        <button type="submit" class="btn btn-danger">Submit</button>
+      </form>
+     </div>
+     <div class="col-md-5 mt-5">
+      <h3 class="mb-4">Address</h3>
+      <p> 10-2-007/A Netaji Nagar, Hitex Tower<br>
+           Madhapur, Hyderabad - 500081<br>
+          <i class="bi bi-telephone"></i> : +918919977991</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9052.703273320556!2d78.38693284882916!3d17.45048820368639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9158f201b205%3A0x11bbe7be7792411b!2sMadhapur%2C%20Telangana!5e0!3m2!1sen!2sin!4v1659633007404!5m2!1sen!2sin" style="width:100% ;" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+     </div>
+     </div>
+    <!--FAQ-->
+    <div class="row justify-content-evenly pt-5 pb-5">
+      <div class="col-md-10">
+        <h3 class="text-center pb-4">#FAQ</h3>
+        <div class="accordion accordion-flush border" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                What is the purpose of a fitness ?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body"><p>Regular physical activity can improve your muscle strength and boost your endurance. Exercise delivers oxygen and nutrients to your tissues and helps your cardiovascular system work more efficiently. And when your heart and lung health improve, you have more energy to tackle daily chores.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                How long will it take to transform my Body ?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body"> <p>And if you exercise regularly, over time you will gain even more fitness benefits. “At 6 to 8 weeks, you can definitely notice some changes,” said Logie, “and in 3 to 4 months you can do a pretty good overhaul to your health and fitness.” Strength-specific results take about the same amount of time.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                What are the Benefits of Personal Training ? 
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p>The first session is designed to get to know you and your specific needs. Typically, your first session with a personal trainer at Fitness Together will include some paperwork, a studio tour, a verbal consultation, and a brief workout and assessment. You'll meet with the trainer in a private and comfortable setting.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer-->
+    <div class="row justify-content-evenly bg-dark text-white pt-2 pb-5">
+      <div class="col-md-3 pt-4">
+       <h5 class="pb-2">TechnoGym</h5>
+       <p>It's Moves is a way of measuring physical activity that unites all. Based on actual body movement, it allows you to measure and compare the level of activity of participants during the Campaign. The faster you move, the more moves you collect.</p>
+      </div>
+      <div class="col-md-3 pt-4">
+          <h5 class="pb-2">Important Links</h5>
+          <p>
+            <a href="#" class="link-light text-decoration-none">Home</a><br>
+            <a href="#" class="link-light text-decoration-none">About Us</a><br>
+            <a href="#" class="link-light text-decoration-none">Contact Us</a><br>
+            <a href="#" class="link-light text-decoration-none">Our Team</a><br>
+            <a href="#" class="link-light text-decoration-none">Payments</a><br>
+            <a href="#" class="link-light text-decoration-none">Support</a><br>
+          </p>
+      </div>
+      <div class="col-md-3 pt-4">
+        <h5 class="pb-2">Contact Us</h5>
+        <p>
+          10-2-007/A Netaji Nagar, Hitex Tower<br>
+          Madhapur, Hyderabad - 500081<br>
+          <i class="bi bi-telephone"></i> : +918919977991 </p>
+
+      </div>
+    </div>
+
+    <!--CopyRight-->
+    <div class="row bg-secondary text-white text-center p-2">
+      <div class="col-12">
+        <p>Copyright 1998-2022 by TechnoGym. All Rights Reserved.</p>
+      </div>
+    </div>
+
+  <!--container End-->
+  </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
