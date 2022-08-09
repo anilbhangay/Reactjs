@@ -1,5 +1,4 @@
 /* NavBar */
-
 #top_nav{
     background-color: #daac00;
     padding: 0 8%;
@@ -80,8 +79,7 @@
     #banner-img img{
         padding-top: 40px;
     }
-}
-     
+}   
 /* service */
 #service-text{
     padding-top: 10%;
